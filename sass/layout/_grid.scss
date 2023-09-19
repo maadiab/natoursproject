@@ -1,0 +1,50 @@
+
+
+
+.row {
+
+
+max-width: $grid-width;  
+
+margin: 0 auto;
+
+&:not(:last-child){
+
+    margin-bottom: $grid-gutter;
+}
+
+[class^='col-']{
+
+  
+    float: left;
+    height: 8rem;
+    padding-left: 1rem;
+    
+    &:not(:last-child){
+        margin-right: $grid-gutter;
+    }
+    
+}
+
+
+.col-1-2 {
+
+
+    width: calc((100% - #{$grid-gutter})/2);
+
+
+
+}
+
+
+.col-1-3 {
+
+
+    width: calc((100% - (#{$grid-gutter})*2)/3);
+
+
+
+}
+
+
+}
