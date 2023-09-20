@@ -1,44 +1,43 @@
-.composition{
+.composition {
 
     position: relative;
 
-    &__photo{
-        
+    &__photo {
 
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4rem);
+        position: absolute;
+        border-radius: 2px;
+        transition: all .2s;
+        outline-offset: 1rem;
 
-width: 55%;
-box-shadow: 0 1.5rem 4rem rgba($color-black, .4rem);
-position: absolute;
-border-radius: 2px;
-transition: all .2s;
-outline-offset: 1rem;
-
-        &--p1{
-top:-2rem;
-left: 0;
+        &--p1 {
+            top: -2rem;
+            left: 0;
         }
 
 
-        &--p2{
-            top:2rem;
+        &--p2 {
+            top: 2rem;
             right: 0;
-                    }
-                    &--p3{
-                        top:10rem;
-                        left: 20%;
-                                }
+        }
 
-                                &:hover{
-                                    outline: 1rem solid $color-medium-primary;
-                                    transform: scale(1.5);
-                                    box-shadow: 0 1.5rem 5rem rgba($color-black, .5rem);
-                                    z-index: 20;
-                                }
+        &--p3 {
+            top: 10rem;
+            left: 20%;
+        }
+
+        &:hover {
+            outline: 1rem solid $color-medium-primary;
+            transform: scale(1.5);
+            box-shadow: 0 1.5rem 5rem rgba($color-black, .5rem);
+            z-index: 20;
+        }
 
     }
 
 
-  
+
 
 
 
