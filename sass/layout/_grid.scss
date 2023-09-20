@@ -47,4 +47,8 @@ margin: 0 auto;
 }
 
 
+.col-1-4 {
+    width: calc((100% - (#{$grid-gutter})*3)/4);
+}
+
 }

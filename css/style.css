@@ -13,8 +13,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
-  box-sizing: border-box; }
+  color: #777; }
 
 @keyframes moveToleft {
   0% {
@@ -169,6 +168,17 @@ body {
       box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
 
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+  .feature-box__icon {
+    font-size: 6rem;
+    color: #28b485; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
@@ -197,3 +207,19 @@ body {
     width: calc((100% - 8rem)/2); }
   .row .col-1-3 {
     width: calc((100% - (8rem)*2)/3); }
+  .row .col-1-4 {
+    width: calc((100% - (8rem)*3)/4); }
+
+.section-about {
+  padding: 30rem 0;
+  margin-top: -25rem;
+  background-color: #f7f7f7; }
+  .section-about::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.section-features {
+  padding: 30rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(/img/nat-4.jpg);
+  background-size: cover; }

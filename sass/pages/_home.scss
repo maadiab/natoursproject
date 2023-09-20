@@ -3,13 +3,20 @@
 
     .section-about {
 @include clearfix;
-        padding: 25rem 0;
-        
-        margin-top: -20rem;
+        padding: 30rem 0;
+        margin-top: -25rem;
         background-color: $color-grey-light-1;
-        // background-color: antiquewhite;
     
-    
-      
     }
     
+.section-features{
+padding:30rem 0;
+
+
+    background-image:
+    linear-gradient(to right bottom,
+        rgba($color-light-primary, 0.8),
+        rgba($color-dark-primary, 0.8)),
+    url(/img/nat-4.jpg);
+    background-size: cover;    
+}
