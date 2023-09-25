@@ -190,15 +190,33 @@ body {
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  width: 100%; }
+  position: relative;
+  height: 50rem; }
   .card__side {
     width: 100%;
-    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 50rem;
-    transition: all .8s;
-    position: absolute; }
-  .card:hover .card__side {
-    transform: rotateY(180deg); }
+    transition: all .8s ease;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
+    border-radius: 3px; }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      background-color: bisque;
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to bottom left, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to bottom left, #2998ff, #5643fa); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to bottom left, #7ed56f, #28b485); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
 
 .header {
   height: 95vh;
@@ -215,7 +233,8 @@ body {
 
 .row {
   max-width: 114rem;
-  margin: 8rem auto; }
+  margin: 8rem auto;
+  padding: 8rem auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
   .row::after {
@@ -223,8 +242,7 @@ body {
     display: table;
     clear: both; }
   .row [class^='col-'] {
-    float: left;
-    height: 8rem; }
+    float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 8rem; }
   .row .col-1-2 {
@@ -237,12 +255,11 @@ body {
 .section-about {
   padding: 30rem 0;
   margin-top: -25rem;
-  background-color: #f7f7f7;
-  padding-bottom: 40rem; }
+  background-color: #f7f7f7; }
 
 .section-features {
-  padding: 30rem 0;
-  margin-top: -12rem;
+  padding: 25rem 0;
+  margin-top: -15rem;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(/img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
@@ -252,5 +269,4 @@ body {
 .section-tours {
   margin-top: -12rem;
   padding: 20rem 0;
-  height: fit-content;
   background-color: #f7f7f7; }
