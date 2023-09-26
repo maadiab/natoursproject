@@ -32,6 +32,16 @@
         }
     }
 
+
+    &__green {
+        color: $color-white;
+        background-color: $color-dark-primary;
+        border-radius: 5rem;
+        &::after {
+            background-color: $color-dark-primary;
+        }
+    }
+
     &::after {
         content: "";
         top: 0;

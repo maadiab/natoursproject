@@ -99,6 +99,9 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
 
+.u-margin-top-large {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-decoration: none;
@@ -124,6 +127,13 @@ body {
   border-radius: 5rem; }
   .btn__white::after {
     background-color: #fff; }
+
+.btn__green {
+  color: #fff;
+  background-color: #28b485;
+  border-radius: 5rem; }
+  .btn__green::after {
+    background-color: #28b485; }
 
 .btn::after {
   content: "";
@@ -257,6 +267,19 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card__price-only {
+    font-size: 1.5rem; }
+  .card__price-value {
+    font-weight: 100;
+    font-size: 6rem;
+    margin-bottom: 3rem; }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {

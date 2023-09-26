@@ -4,8 +4,6 @@
     position: relative;
     height: 50rem;
 
-
-
     &__side {
         width: 100%;
         position: absolute;
@@ -17,8 +15,6 @@
         backface-visibility: hidden;
         border-radius: 3px;
         overflow: hidden;
-
-
 
         &--front {
             background-color: $color-white;
@@ -42,20 +38,11 @@
                 background-image: linear-gradient(to bottom left,
                         $color-light-primary, $color-dark-primary);
             }
-
-
-
-
         }
-
-
-
-
     }
 
     &__picture {
         background-size: cover;
-
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         // -webkit-clip-path: polygon(0 0,100% 0, 100% 75%, 100% 0);
@@ -107,26 +94,48 @@
             background-image: linear-gradient(to right bottom,
                     rgba($color-tertiary-dark, .85), rgba($color-tertiary-light, .85));
         }
-
     }
 
 
     &__details {
-       
-       padding: 2rem;
+        padding: 2rem;
+
         ul {
             list-style: none;
             width: 80%;
             margin: 0 auto;
+
             li {
                 text-align: center;
                 font-size: 1.5rem;
                 padding: 1rem;
-                &:not(:last-child){
+
+                &:not(:last-child) {
                     border-bottom: 1px solid #eee;
                 }
             }
         }
+    }
+
+    &__cta {
+        text-align: center;
+        color: $color-white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__price-box {}
+
+    &__price-only {
+        font-size: 1.5rem;
+    }
+
+    &__price-value {
+        font-weight: 100;
+        font-size: 6rem;
+        margin-bottom: 3rem;
     }
 
     &:hover .card__side--front {
