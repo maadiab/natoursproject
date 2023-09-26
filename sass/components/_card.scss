@@ -39,6 +39,21 @@
             $color-light-primary,$color-dark-primary);
         }
     }
+
+}
+
+&__picture {
+    background-size: cover;
+    height: 23rem;
+    &--1 {
+        background-image: url(../img/nat-5.jpg);
+    }
+    &--2 {
+        background-image: url(../img/nat-6.jpg);
+    }
+    &--3 {
+        background-image: url(../img/nat-7.jpg);
+    }
 }
 
 &:hover .card__side--front{
