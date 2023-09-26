@@ -3,65 +3,138 @@
     -moz-perspective: 150rem;
     position: relative;
     height: 50rem;
-   
 
 
-&__side {
-    width: 100%;
-   position: absolute;
-   top:0;
-   left: 0;
-   height: 50rem;
-    transition: all .8s ease;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    backface-visibility: hidden;
-    border-radius: 3px;
-    
+
+    &__side {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 50rem;
+        transition: all .8s ease;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        backface-visibility: hidden;
+        border-radius: 3px;
+        overflow: hidden;
 
 
-    &--front {
-        background-color:$color-white;
-    }
 
-    &--back {
-        background-color:bisque;
-        transform: rotateY(180deg);
-        &-1 {
-            background-image: linear-gradient(to bottom left,
-            $color-secondry-light,$color-secondry-dark);
+        &--front {
+            background-color: $color-white;
         }
-        &-2 {
-            background-image: linear-gradient(to bottom left,
-            $color-tertiary-light,$color-tertiary-dark);
+
+        &--back {
+            background-color: bisque;
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to bottom left,
+                        $color-secondry-light, $color-secondry-dark);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to bottom left,
+                        $color-tertiary-light, $color-tertiary-dark);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to bottom left,
+                        $color-light-primary, $color-dark-primary);
+            }
+
+
+
+
         }
-        &-3 {
-            background-image: linear-gradient(to bottom left,
-            $color-light-primary,$color-dark-primary);
+
+
+
+
+    }
+
+    &__picture {
+        background-size: cover;
+
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+        // -webkit-clip-path: polygon(0 0,100% 0, 100% 75%, 100% 0);
+        height: 23rem;
+
+        &--1 {
+            background-image: url(../img/nat-5.jpg);
+        }
+
+        &--2 {
+            background-image: url(../img/nat-6.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/nat-7.jpg);
         }
     }
 
-}
+    &__heading {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: $color-white;
+        text-transform: uppercase;
+        position: absolute;
+        top: 12rem;
+        right: 1rem;
+        width: 65%;
+        text-align: right;
 
-&__picture {
-    background-size: cover;
-    height: 23rem;
-    &--1 {
-        background-image: url(../img/nat-5.jpg);
     }
-    &--2 {
-        background-image: url(../img/nat-6.jpg);
-    }
-    &--3 {
-        background-image: url(../img/nat-7.jpg);
-    }
-}
 
-&:hover .card__side--front{
-    transform: rotateY(-180deg);
-}
+    &__heading-span {
+        padding: 1rem 1rem;
 
-&:hover .card__side--back{
-    transform: rotateY(0);
-}
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-dark-primary, .85), rgba($color-light-primary, .85));
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-secondry-dark, .85), rgba($color-secondry-light, .85));
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom,
+                    rgba($color-tertiary-dark, .85), rgba($color-tertiary-light, .85));
+        }
+
+    }
+
+
+    &__details {
+       
+       padding: 2rem;
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:not(:last-child){
+                    border-bottom: 1px solid #eee;
+                }
+            }
+        }
+    }
+
+    &:hover .card__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover .card__side--back {
+        transform: rotateY(0);
+    }
 
 }
