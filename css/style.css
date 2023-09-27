@@ -285,6 +285,28 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0); }
 
+.story {
+  width: 75%;
+  padding: 6rem;
+  margin: auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  transform: skewX(-12deg); }
+  .story > * {
+    transform: skewX(12deg); }
+  .story__shape {
+    width: 15rem;
+    height: 15rem;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    background-color: #f7f7f7;
+    float: left;
+    margin-right: 6rem;
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%); }
+  .story__img {
+    height: 100%; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
@@ -337,3 +359,6 @@ body {
   margin-top: -12rem;
   padding: 20rem 0;
   background-color: #f7f7f7; }
+
+.section-stories {
+  padding: 15rem 0; }
