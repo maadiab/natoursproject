@@ -291,7 +291,8 @@ body {
   margin: auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
   border-radius: 3px;
-  transform: skewX(-12deg); }
+  transform: skewX(-12deg);
+  background-color: rgba(247, 247, 247, 0.8); }
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
@@ -299,7 +300,6 @@ body {
     height: 15rem;
     shape-outside: circle(50% at 50% 50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
-    background-color: #f7f7f7;
     float: left;
     margin-right: 6rem;
     clip-path: circle(50% at 50% 50%);
@@ -321,6 +321,20 @@ body {
   .story:hover .story__img {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   height: 95vh;
@@ -376,4 +390,5 @@ body {
   background-color: #f7f7f7; }
 
 .section-stories {
-  padding: 15rem 0; }
+  padding: 15rem 0;
+  position: relative; }

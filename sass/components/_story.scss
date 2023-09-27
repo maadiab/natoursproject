@@ -6,6 +6,7 @@
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
     border-radius: 3px;
     transform: skewX(-12deg);
+     background-color: rgba($color-grey-light-1,.8);
    
 
     & > * {
@@ -17,7 +18,7 @@
         height: 15rem;
         shape-outside: circle(50% at 50% 50%);
         -webkit-shape-outside: circle(50% at 50% 50%);
-        background-color: $color-grey-light-1;
+        // background-color: $color-grey-light-1;
         float: left;
         margin-right: 6rem;
         clip-path: circle(50% at 50% 50%);
