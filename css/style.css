@@ -392,3 +392,13 @@ body {
 .section-stories {
   padding: 15rem 0;
   position: relative; }
+
+.section-book {
+  padding: 12rem 0;
+  background-image: linear-gradient(to right bottom, #28b485, #7ed56f); }
+
+.book {
+  background-image: url(/img/nat-10.jpg);
+  background-size: 100%;
+  border-radius: 3px;
+  height: 50rem; }
