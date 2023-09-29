@@ -398,7 +398,8 @@ body {
   background-image: linear-gradient(to right bottom, #28b485, #7ed56f); }
 
 .book {
-  background-image: url(/img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(/img/nat-10.jpg);
   background-size: 100%;
   border-radius: 3px;
-  height: 50rem; }
+  height: 50rem;
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3); }
