@@ -1,28 +1,19 @@
 .section-about {
-
     padding: 30rem 0;
     margin-top: -25rem;
     background-color: $color-grey-light-1;
-
 }
 
 .section-features {
-
     padding: 25rem 0;
-
-
     margin-top: -15rem;
-
     background-image:
         linear-gradient(to right bottom,
             rgba($color-light-primary, 0.8),
             rgba($color-dark-primary, 0.8)),
         url(/img/nat-4.jpg);
     background-size: cover;
-
-
     transform: skewY(-7deg);
-
 
     &>* {
         transform: skewY(7deg);
@@ -33,10 +24,7 @@
 .section-tours {
     margin-top: -12rem;
     padding: 20rem 0;
-
     background-color: $color-grey-light-1;
-
-
 }
 
 .section-stories {
@@ -52,7 +40,6 @@
 
 
 .book {
-
     background-image: linear-gradient(105deg,
             rgba($color-white, .8) 0%,
             rgba($color-white, .8) 50%,
@@ -65,7 +52,7 @@
 
     &__form {
 
-        width: 50%;
+        width: 60%;
         padding: 6rem;
 
     }

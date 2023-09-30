@@ -1,5 +1,5 @@
 .btn {
-
+&,
     &:link,
     &:visited {
         display: inline-block;
@@ -8,6 +8,7 @@
         position: relative;
         animation: moveUp 2s;
         font-size: 1.6rem;
+        border: none;
     }
     &:hover {
         transform: translateY(-3px);

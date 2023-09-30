@@ -5,6 +5,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
+    
 }
 
 .heading-primary {
@@ -45,9 +46,12 @@ body {
     background-image: linear-gradient(to right, $color-light-primary, $color-dark-primary);
     -webkit-background-clip: text;
     color: transparent;
-    transition: all .5s;
+    transition: all .3s;
+   
+    
 
     &:hover{
+      
         text-shadow: .5rem 1rem .5rem rgba($color: $color-black, $alpha: .2);
        transform: scale(1.1);
 
