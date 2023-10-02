@@ -417,6 +417,30 @@ body {
   .header__logo {
     height: 3.5rem; }
 
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 2000;
+  top: 6rem;
+  right: 6rem;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4); }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1000;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56f, #28b485); }
+
 .row {
   max-width: 114rem;
   margin: 8rem auto;
