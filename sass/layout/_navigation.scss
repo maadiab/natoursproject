@@ -1,41 +1,75 @@
 .navigation {
     &__checkbox {
-display:none;
+        display: none;
     }
+
     &__button {
-        height:7rem;
-        width:7rem;
-        border-radius:50%;
-        position:fixed;
-        z-index:2000;
-        top:6rem;
-        right:6rem;
-       background-color: $color-white;
-       box-shadow:0 .5rem 3rem rgba($color-black,.4);
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 2000;
+        top: 6rem;
+        right: 6rem;
+        background-color: $color-white;
+        box-shadow: 0 .5rem 3rem rgba($color-black, .1);
     }
 
     &__background {
-        height:6rem;
-        width:6rem;
-        border-radius:50%;
-        position:fixed;
-        z-index:1000;
-        top:6.5rem;
-        right:6.5rem;
-        background-image: radial-gradient($color-light-primary,$color-dark-primary);
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 1000;
+        top: 6.5rem;
+        right: 6.5rem;
+        background-image: radial-gradient($color-light-primary, $color-dark-primary);
+        // transform: scale(80);
     }
 
     &__nav {
-        
+        height: 100vh;
+        width: 100%;
+        z-index: 1500;
+        position: fixed;
+        top: 0;
+        right: 0;
     }
+
     &__list {
-        
+
+
+        @include centerelement;
+        text-align: center;
     }
 
     &__item {
-        
+        display: block;
+        margin: 1rem;
     }
+
     &__link {
-        
+
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 3rem;
+            font-weight: 300;
+            padding: 0rem 1.5rem;
+            text-transform: uppercase;
+            color: $color-white;
+            text-decoration: none;
+            background-image: linear-gradient(120deg, transparent 50%, transparent 50%, $color-white 50%);
+            background-size: 250%;
+            transition: all .3s;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-dark-primary;
+            transform: translateX(1rem);
+        }
+
     }
 }
