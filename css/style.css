@@ -439,22 +439,26 @@ body {
   z-index: 1000;
   top: 6.5rem;
   right: 6.5rem;
-  background-image: radial-gradient(#7ed56f, #28b485); }
+  background-image: radial-gradient(#7ed56f, #28b485);
+  transition: transform .8s; }
 
 .navigation__nav {
   height: 100vh;
-  width: 100%;
   z-index: 1500;
   position: fixed;
   top: 0;
-  right: 0; }
+  left: 0;
+  opacity: 0;
+  width: 0;
+  transition: all .3s; }
 
 .navigation__list {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 .navigation__item {
   display: block;
@@ -476,6 +480,13 @@ body {
   background-position: 100%;
   color: #28b485;
   transform: translateX(1rem); }
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80); }
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%; }
 
 .row {
   max-width: 114rem;
