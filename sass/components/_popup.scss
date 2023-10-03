@@ -5,11 +5,45 @@
     top: 0;
     left: 0;
     background-color: rgba($color-black, .8);
-    
+    z-index: 5000;
+
     &__box {
+        // height: 60rem;
+        width: 75%;
+        background-color: $color-white;
+        @include centerelement;
+        border-radius: 5px;
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        overflow: hidden;
+        display: table;
 
-
-
-        z-index: 5000;
     }
+
+    &__left {
+        width: 33.3333%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__right {
+        width: 66.66667%;
+        display: table-cell;
+        vertical-align: middle;
+        padding:1rem 3rem;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+        border: none;
+
+    }
+
+    &__text {
+        margin-bottom: 3rem;
+        column-count: 2;
+        column-gap: 4rem;
+        column-rule: 1px solid #eee;
+    }
+
 }
