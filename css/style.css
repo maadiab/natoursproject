@@ -411,7 +411,8 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 5000; }
+  z-index: 5000;
+  display: none; }
   .popup__box {
     width: 75%;
     background-color: #fff;
@@ -440,7 +441,8 @@ body {
     margin-bottom: 3rem;
     column-count: 2;
     column-gap: 4rem;
-    column-rule: 1px solid #eee; }
+    column-rule: 1px solid #eee;
+    hyphens: auto; }
 
 .header {
   height: 95vh;

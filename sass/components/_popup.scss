@@ -6,6 +6,7 @@
     left: 0;
     background-color: rgba($color-black, .8);
     z-index: 5000;
+    display: none;
 
     &__box {
         // height: 60rem;
@@ -44,6 +45,7 @@
         column-count: 2;
         column-gap: 4rem;
         column-rule: 1px solid #eee;
+        hyphens: auto;
     }
 
 }
