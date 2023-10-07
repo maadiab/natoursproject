@@ -11,7 +11,7 @@
         linear-gradient(to right bottom,
             rgba($color-light-primary, 0.8),
             rgba($color-dark-primary, 0.8)),
-        url(/img/nat-4.jpg);
+        url(../img/nat-4.jpg);
     background-size: cover;
     transform: skewY(-7deg);
 
@@ -44,7 +44,7 @@
             rgba($color-white, .8) 0%,
             rgba($color-white, .8) 50%,
             transparent 50%),
-        url(/img/nat-10.jpg);
+        url(../img/nat-10.jpg);
     background-size: 100%;
     border-radius: 3px;
     height: 50rem;
