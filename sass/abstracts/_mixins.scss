@@ -14,3 +14,29 @@
     left:50%;
     transform:translate(-50%,-50%);
 }
+
+
+/*
+1em = 16px
+*/ 
+
+
+
+@mixin responsive($break-point){
+    @if $break-point==phone {
+        @media (max-width: 37.5em){@content};
+    }
+    @if $break-point==tab-port {
+        @media (max-width: 56.25em){@content};
+    }
+    @if $break-point==tab-land {
+        @media (max-width: 75em){@content};
+    }
+    @if $break-point==big-screens {
+        @media (min-width: 112.5em){@content};
+    }
+    
+    
+    
+    
+}
