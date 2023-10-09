@@ -32,7 +32,7 @@
     @if $break-point==tab-land {
         @media (max-width: 75em){@content};
     }
-    @if $break-point==big-screens {
+    @if $break-point==big-screen {
         @media (min-width: 112.5em){@content};
     }
     

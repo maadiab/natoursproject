@@ -1,11 +1,10 @@
-
 body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
-    
+
 }
 
 .heading-primary {
@@ -17,28 +16,42 @@ body {
     color: $color-white;
     text-align: center;
 
+
+
+
     &--main {
         display: block;
-        font-size: 60px;
-        font-weight: 700;
-        letter-spacing: 35px;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
         animation-name: moveToleft;
         animation-duration: 2s;
+
+        @include responsive (phone) {
+            font-size: 5rem;
+            letter-spacing: 1rem;
+        }
     }
 
     &--sub {
         display: block;
         font-size: 2rem;
-        font-weight: 400;
+        font-weight: 700;
         letter-spacing: 1.4rem;
         animation-name: moveToRight;
         animation-duration: 2s;
         margin-bottom: 4rem;
+        text-align: center;
+
+        @include responsive (phone) {
+            font-size: 1.5rem;
+            letter-spacing: .4rem;
+        }
     }
 
 }
 
-.heading-secondry{
+.heading-secondry {
     font-size: 3.5rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -47,13 +60,21 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     transition: all .3s;
-   
-    
 
-    &:hover{
-      
+    @include responsive(phone) {
+        font-size: 3rem;
+    }
+
+    @include responsive(phone) {
+        font-size: 2.5rem;
+    }
+
+
+
+    &:hover {
+
         text-shadow: .5rem 1rem .5rem rgba($color: $color-black, $alpha: .2);
-       transform: scale(1.1);
+        transform: scale(1.1);
 
     }
 
@@ -61,7 +82,7 @@ body {
 
 
 
-.heading-paragraph{
+.heading-paragraph {
 
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -69,7 +90,7 @@ body {
 
 
 .paragraph {
-    &:not(:last-child){
+    &:not(:last-child) {
         margin-bottom: 3rem;
     }
 }

@@ -4,6 +4,11 @@
   text-align: center;
   text-transform: uppercase;
 
+  @include responsive(tab-port) {
+    padding: 6rem 0;
+    width: 100%;
+  }
+
   &__logo-box {}
 
   &__logo {
@@ -17,6 +22,11 @@
     border-top: 1px solid rgba(#777, .4);
     padding-top: 3rem;
     display: inline-block;
+
+    @include responsive(tab-port) {
+      width: 100%;
+      text-align: center;
+    }
 
   }
 

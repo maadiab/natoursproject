@@ -13,6 +13,11 @@
         right: 6rem;
         background-color: $color-white;
         box-shadow: 0 .5rem 3rem rgba($color-black, .1);
+
+        @include responsive(tab-port){
+            top: 4rem;
+            right: 4rem;
+        }
     }
 
     &__background {
@@ -26,7 +31,10 @@
         background-image: radial-gradient($color-light-primary, $color-dark-primary);
 
         transition: transform .8s;
-
+        @include responsive(tab-port){
+            top: 4.5rem;
+            right: 4.5rem;
+        }
     }
 
     &__nav {
