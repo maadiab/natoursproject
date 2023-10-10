@@ -1,13 +1,16 @@
 .feature-box {
-    background-color: rgba($color-white, .8);
-    // background-color: antiquewhite;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    padding: 2.5rem;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    transition: all .3s;
+  background-color: rgba($color-white, .8);
+  // background-color: antiquewhite;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  transition: all .3s;
 
+  @include responsive(tab-port) {
+    padding: 1.8;
+  }
 
 
 
@@ -18,6 +21,10 @@
     background-image: linear-gradient(to right, $color-light-primary, $color-dark-primary);
     -webkit-background-clip: text;
     color: transparent;
+
+    @include responsive(tab-port) {
+      margin-bottom: 0;
+    }
   }
 
   &:hover {

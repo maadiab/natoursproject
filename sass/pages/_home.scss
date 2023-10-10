@@ -1,7 +1,11 @@
 .section-about {
     padding: 30rem 0;
-    margin-top: -25rem;
+    margin-top: -25vh;
     background-color: $color-grey-light-1;
+
+    @include responsive(tab-port){
+        padding: 28rem 0;
+    }
 }
 
 .section-features {
@@ -17,6 +21,13 @@
 
     &>* {
         transform: skewY(7deg);
+    }
+
+    @include responsive(tab-port){
+        // padding: 5rem 0;
+        padding: 5rem 0;
+        
+
     }
 }
 
