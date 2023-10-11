@@ -3,7 +3,7 @@
     margin-top: -25vh;
     background-color: $color-grey-light-1;
 
-    @include responsive(tab-port){
+    @include responsive(tab-port) {
         padding: 28rem 0;
     }
 }
@@ -23,10 +23,10 @@
         transform: skewY(7deg);
     }
 
-    @include responsive(tab-port){
+    @include responsive(tab-port) {
         // padding: 5rem 0;
         padding: 5rem 0;
-        
+
 
     }
 }
@@ -58,13 +58,29 @@
         url(../img/nat-10.jpg);
     background-size: 100%;
     border-radius: 3px;
-    height: 50rem;
+    // height: 50rem;
     box-shadow: 0 1rem 4rem rgba($color-black, .3);
+
+
+    @include responsive(tab-land) {
+        background-image: linear-gradient(105deg,
+                rgba($color-white, .8) 0%,
+                rgba($color-white, .8) 70%,
+                transparent 70%),
+            url(../img/nat-10.jpg);
+            background-size: cover;
+    }
+
+
+  
 
     &__form {
 
         width: 60%;
         padding: 6rem;
 
+        @include responsive(tab-land) {
+            width: 70%;
+        }
     }
 }
